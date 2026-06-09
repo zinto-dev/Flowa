@@ -1021,21 +1021,21 @@ mask-image: linear-gradient(to top, transparent 40%, #6e1c39 80%) !important;
   display: flex;
   justify-content: space-between; 
   align-items: flex-start;
+  width: 100%; /* ADDED: This gives the container the full width to push text apart */
   font-family: 'Cedarville Cursive', cursive;
   font-size: 3rem;
   color: #ffccd5;
   text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
-  /* Ensure the container doesn't overflow */
   flex-wrap: wrap; 
 }
 
 /* This is the mobile fix */
 @media (max-width: 600px) {
   .message {
-    flex-direction: column; /* Stacks them vertically on phones */
-    align-items: center;    /* Centers them */
-    font-size: 2rem;        /* Slightly smaller text for mobile screens */
-    gap: 0.5rem;            /* Adds a little space between stacked lines */
+    flex-direction: column; 
+    align-items: center;    
+    font-size: 2rem;        
+    gap: 0.5rem;            
   }
 }
 
